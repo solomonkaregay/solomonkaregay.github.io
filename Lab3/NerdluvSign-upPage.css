@@ -24,7 +24,7 @@ form{
 legend{
     background-color: white;
     border:solid;
-    border-color: so;
+    border-color: darkgray;
 }
 a{
     color: rgb(201, 29, 29);
@@ -36,6 +36,10 @@ label{
 }
 
 .validotor{
-    float: left;
-    margin-top: 50px;
+    width: fit-content;
+    margin: auto;
+}
+.mainContainer{
+    width: 375px;
+    margin: auto;
 }

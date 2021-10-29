@@ -1,7 +1,7 @@
 fieldset{
     border-radius: 20px;
 }
-name{
+#name{
     font-weight: bold;
 } legend{
     color:rgba(16, 16, 235, 0.548);
@@ -16,7 +16,6 @@ font-weight: bold;
 font-family: 'Times New Roman', Times, serif;
 color: rgb(56, 5, 5);
 padding:10px ;
-padding: left;
 text-align: left;
     min-width: 30px;
     display: inline-block;
@@ -41,7 +40,6 @@ form{
 
 .validotor{
     max-width: fit-content;
-    margin: left;
     margin-left: 360px;
     margin-top: 50px;
 }
@@ -49,6 +47,6 @@ form{
     max-width: fit-content;
     margin: auto;
 }
-index{
+.index{
     margin: auto;
 }

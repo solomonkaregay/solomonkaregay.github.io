@@ -1,0 +1,41 @@
+
+
+input[type="submit"]{
+    background-color:rgb(142, 166, 189);
+}
+fieldset{
+    margin: auto;
+    border-radius: 15px;
+}
+input[type="submit"]{
+    background-color:rgb(179, 28, 128);
+}
+h1{
+    text-align: center;
+    color:blue;
+}
+form{
+    background-color: rgb(139, 164, 165);
+    border-radius: 15px;
+    max-width: fit-content;
+    margin: auto;
+    padding-right: 10px;
+}
+legend{
+    background-color: white;
+    border:solid;
+    border-color: so;
+}
+a{
+    color: rgb(201, 29, 29);
+}
+label{
+    text-align: left;
+    min-width: 120px;
+    display: inline-block;
+}
+
+.validotor{
+    float: left;
+    margin-top: 50px;
+}

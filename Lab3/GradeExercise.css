@@ -1,0 +1,54 @@
+fieldset{
+    border-radius: 20px;
+}
+name{
+    font-weight: bold;
+} legend{
+    color:rgba(16, 16, 235, 0.548);
+    font-size: 20px;
+    font-weight: bold;
+}
+as{
+    color: cyan;
+}
+label{
+font-weight: bold;
+font-family: 'Times New Roman', Times, serif;
+color: rgb(56, 5, 5);
+padding:10px ;
+padding: left;
+text-align: left;
+    min-width: 30px;
+    display: inline-block;
+}
+
+input[type="submit"]{
+    background-color:rgb(123, 123, 134);
+
+}
+h1{
+    text-align: center;
+    color: darkgoldenrod;
+}
+
+form{
+    background-color: darkgrey;
+    border-radius: 20px;
+    max-width: fit-content;
+    margin: auto;
+    padding-right: 0px;
+    text-align: left;}
+
+.validotor{
+    max-width: fit-content;
+    margin: left;
+    margin-left: 360px;
+    margin-top: 50px;
+}
+.container{
+    max-width: fit-content;
+    margin: auto;
+}
+index{
+    margin: auto;
+}

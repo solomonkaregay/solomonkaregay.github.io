@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Javascript Scope Exercises</title>
+</head>
+
+<body>
+    <h3>Javascript Scope Exercises</h3>
+
+    <div>
+        <a href="http://mumstudents.org/cs472/2021-11-BL/quiz/ScopeExercises.pdf">Javascript Scope Exercises</a>
+    </div>
+    <pre>
+        1. Determine what this Javascript code will print out (without running it):
+
+        Answer 1
+        x = 1;
+        var a = 5;
+        var b = 10;
+        var c = function(a, b, c) {
+            var x = 10;
+            document.write(x); // 10
+            document.write(a); // 8
+            var f = function(a, b, c) {
+                b = a; // a=8, b=8, c=10
+                document.write(b); // 8
+                b = c; // b=8
+                var x = 5;
+            }
+            f(a,b,c);
+            document.write(b); // 9
+        }
+        c(8,9,10);
+        document.write(b); // 10
+        document.write(x); // 1
+        }
+        Answer1
+        // output => 10889101
+
+        2. What is the difference between a method and function?
+
+        Answer2
+        A function is called by name and works as a (first-class) variable while a method is only accessible from its object.
+
+        3. What does 'this' refer to when used in a Java method?
+
+        Answer3
+        "this" is nearest class itself.
+
+        4. What does 'this' refer to when used in a JavaScript method?
+
+        [Answer]
+        It depends on context:
+            - in function, this refers to the global object
+            - in event handler, this refers to the current element that received that event
+            - otherwise, this refers to global object
+
+        5. What does 'this' refer to when used in a JavaScript constructor function?
+
+        Answer5
+        "this" is object created inside constructor.
+
+        6. Assume object x is the prototype for object y in Javascript. Object x has a method f( ) containing keyword 'this'.
+        When f is called by x.f( ), what does 'this' refer to?
+
+        Answer6
+        this refers x
+
+        7. What is a free variable in JavaScript?
+
+        Answer7
+        A variable that called by the current function but not one of its parameters or local variables.
+
+        8. Create an object that has properties with name = "fred" and major="music" and a property that is a function
+        that takes 2 numbers and returns the smallest of the two, or the square of the two if they are equal.
+
+        Answer8
+        var ob = (() => {
+            return {
+                'name': 'fred',
+                'major': 'music',
+                'someFunc': (num1, num2) => {
+                    if (num1 === num2) {
+                        return num1 ** 2 + num2 ** 2;
+                    } else if ((num1 > num2)) {
+                        return num2;
+                    } else {
+                        return num1;
+                    }
+                }
+            }
+        })();
+
+        9. Write Javascript code for creating three Employee objects using the "new" keyword and a constructor function.
+        Employee objects have the following fields: name, salary, position.
+
+        Answer9
+        function Employee(name, salary, position) {
+            this.name = name;
+            this.salary = salary;
+            this.position = position;
+        };
+
+        10. Write a Javascript function that takes any number of input arguments and returns the product of the
+        arguments.
+
+        Answer10
+        var findProduct = (...values) => {
+            return eval(values.join('*'));
+        }
+
+        11. Write an arrow function that returns the maximum of its three input arguments.
+
+        Answer11
+        var findMax = (x1, x2, x3) => {
+            return Math.max(x1,x2, x3);
+        }
+
+    </pre>
+</body>
+</html>
